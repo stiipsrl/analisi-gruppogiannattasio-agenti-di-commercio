@@ -4,7 +4,7 @@
         <div class="border-l-4 brand-border pl-4 mb-8">
             <h2 class="text-2xl font-bold text-gray-800 mb-4">Roadmap di Sviluppo</h2>
             <p class="text-gray-600">
-                Il progetto segue una strategia di sviluppo incrementale, suddivisa in quattro sprint settimanali.
+                Il progetto segue una strategia di sviluppo incrementale, suddivisa in 4 sprint settimanali.
                 Questo approccio consente una delivery costante di valore e permette di adattare il prodotto 
                 in base al feedback del cliente, assicurando che il sistema di gestione fatture e incassi soddisfi 
                 pienamente le esigenze operative degli agenti di commercio.
@@ -104,7 +104,7 @@
                 <ul class="space-y-2 text-gray-600">
                     <li class="flex items-start">
                         <span class="material-icons-outlined text-[#FCD415] text-sm mr-2">code</span>
-                        Gestione di diversi formati di file per l'importazione
+                        Gestione di diversi formati di file per l'importazione con colonne variabili
                     </li>
                     <li class="flex items-start">
                         <span class="material-icons-outlined text-[#FCD415] text-sm mr-2">code</span>
@@ -136,7 +136,7 @@
                         <ul class="space-y-1">
                             <li class="flex items-start text-sm text-gray-600">
                                 <span class="material-icons-outlined text-green-500 text-sm mr-1">check_circle</span>
-                                Setup ambiente di sviluppo Laravel & Vue
+                                Setup ambiente di sviluppo
                             </li>
                             <li class="flex items-start text-sm text-gray-600">
                                 <span class="material-icons-outlined text-green-500 text-sm mr-1">check_circle</span>
@@ -179,13 +179,26 @@
                             </li>
                             <li class="flex items-start text-sm text-gray-600">
                                 <span class="material-icons-outlined text-green-500 text-sm mr-1">check_circle</span>
-                                Configurazione modelli di importazione per cliente
+                                Sistema mappatura personalizzata colonne CSV per cliente
                             </li>
                             <li class="flex items-start text-sm text-gray-600">
                                 <span class="material-icons-outlined text-green-500 text-sm mr-1">check_circle</span>
                                 Generazione automatica scadenze da fatture
                             </li>
                         </ul>
+                    </div>
+                    <div>
+                        <h6 class="text-sm font-medium text-gray-700 mb-2">Dettaglio Importazione CSV:</h6>
+                        <div class="p-3 bg-blue-50 rounded-lg text-sm text-gray-600 border border-blue-100">
+                            <p>Sviluppo di un sistema avanzato per la gestione dei modelli di importazione CSV/Excel che permetterà di:</p>
+                            <ul class="mt-2 space-y-1 pl-5 list-disc">
+                                <li>Salvare configurazioni personalizzate di mappatura colonne per ogni cliente</li>
+                                <li>Proporre automaticamente il modello configurato durante l'importazione</li>
+                                <li>Rilevare dinamicamente le colonne dal file caricato per configurare nuovi modelli</li>
+                                <li>Mappare visualmente le colonne del file con i campi del database</li>
+                                <li>Riutilizzare configurazioni esistenti o modificarle al volo</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -287,7 +300,7 @@
                 <ul class="space-y-2 text-gray-600">
                     <li class="flex items-start">
                         <span class="material-icons-outlined text-[#FCD415] text-sm mr-2">arrow_forward</span>
-                        Importazione automatica fatture da Excel/CSV
+                        Importazione fatture da Excel/CSV
                     </li>
                     <li class="flex items-start">
                         <span class="material-icons-outlined text-[#FCD415] text-sm mr-2">arrow_forward</span>
@@ -316,7 +329,7 @@
                     </li>
                     <li class="flex items-start">
                         <span class="material-icons-outlined text-[#FCD415] text-sm mr-2">settings</span>
-                        Automazione dei processi di sollecito pagamenti
+                        Ottimizzazione dei processi di sollecito pagamenti
                     </li>
                 </ul>
             </div>
@@ -341,16 +354,7 @@
                         Il sistema è progettato con un'architettura modulare che consentirà in futuro di implementare funzionalità aggiuntive, come l'integrazione con software di contabilità o dashboard avanzate per l'analisi dei flussi di cassa. Queste espansioni potranno essere valutate in una fase successiva, sulla base dell'utilizzo effettivo del sistema e delle necessità emergenti del cliente.
                     </p>
                 </div>
-                
-                <div class="bg-blue-50 p-4 rounded-lg border border-blue-200 mt-4">
-                    <h5 class="font-medium text-blue-800 flex items-center mb-2">
-                        <span class="material-icons-outlined text-blue-700 mr-2 text-sm">file_present</span>
-                        Nota sui modelli di importazione
-                    </h5>
-                    <p class="text-gray-700 text-sm">
-                        È fondamentale definire in fase preliminare quanti e quali modelli Excel/CSV dovranno essere gestiti per l'importazione delle fatture. Poiché ogni cliente potrebbe utilizzare un formato specifico per l'emissione delle proprie fatture, sarà necessario stabilire e configurare un modello di mappatura personalizzato per ciascuno di essi. Questo aspetto dovrà essere discusso in dettaglio con il cliente durante la fase iniziale del progetto per garantire una corretta pianificazione delle risorse e del tempo necessario per l'implementazione. La complessità del sistema di importazione aumenterà proporzionalmente al numero di modelli da supportare.
-                    </p>
-                </div>
+            
             </div>
         </div>
     </div>
